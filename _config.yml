@@ -4,18 +4,19 @@
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
+#Write an awesome description for your new site here. You can edit this
+#  line in _config.yml. It will appear in your document head meta (for
+#  Google search results) and in your feed.xml site description.
 
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Drew Hoo
+email: drew.hoo@bc.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hey I'm Drew, I take a lot of photos (so check out my photo section), oh and I'm a Math and CS double major at Boston College.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://drewhoo.com" # the base hostname & protocol for your site
+#twitter_username: 
+github_username:  hoodr
 
 # Build settings
 markdown: kramdown
