@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome!"
 date:   2015-11-22 17:41:17 -0500
 categories: jekyll update
 ---
@@ -17,6 +17,16 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
+
+{% highlight python linenos%}
+def getTotalReward (k, grains):
+    if (k == 0):
+        return grains
+    else:
+        newGrains = 2**(k - 1)
+        return getTotalReward(k -1, grains + newGrains)
+{% endhighlight %}
+
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
