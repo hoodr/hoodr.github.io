@@ -29,6 +29,13 @@
     line-height: 56px;
     display: inline;
 
+    .site-list {
+        list-style: none;
+        > li {
+        display: inline;
+        }
+    }
+
     .menu-icon {
         display: none;
     }
