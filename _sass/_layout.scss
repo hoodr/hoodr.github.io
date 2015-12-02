@@ -27,7 +27,6 @@
 .site-nav {
     float: right;
     line-height: 56px;
-    display: inline;
 
     .site-list {
         list-style: none;
@@ -35,7 +34,12 @@
         display: inline;
         }
     }
-
+    .site-ul{
+        > ul {
+        list-style-type: disc;
+        float: right;
+        }
+    }
     .menu-icon {
         display: none;
     }
