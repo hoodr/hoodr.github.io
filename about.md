@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Hey, I'm Drew!
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+Thanks for visiting! Hopefully I'll have a much cleaner fully working site up and running soon, but such is the life of a college student. In the meantime, find me on [Flickr] or even better find me on [The Heights].
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+More about me, I'm a Math and C.S. major at Boston College. This is my portfolio for my images as well as some cool stuff I'm working on / thoughts that sometimes compell me to write words about (in the rare occurences that happens). For now, you can find some code on Github here: {% include icon-github.html username="hoodr" %}
+
+[jekyll]: (https://github.com/jekyll/jekyll)
+[Flickr]: (https://www.flickr.com/photos/105319058@N06)
+[The Heights]: (http://bcheights.com/?s=%22drew+hoo%22&submit=Search)
