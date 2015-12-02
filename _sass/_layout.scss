@@ -28,6 +28,7 @@
     float: right;
     line-height: 56px;
 
+
     .site-list {
         list-style: none;
         > li {
@@ -43,7 +44,11 @@
     .menu-icon {
         display: none;
     }
+    .trigger{
 
+        display: inline-block;
+        
+    }
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
