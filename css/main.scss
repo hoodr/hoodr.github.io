@@ -3,7 +3,10 @@
 ---
 @charset "utf-8";
 
-@include font-face(Ailerons, assets/Ailerons);
+@font-face {
+  font-family: 'Ailerons';
+  src url('assets/Ailerons.otf') format('opentype');
+  }
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
