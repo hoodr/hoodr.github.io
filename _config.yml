@@ -12,11 +12,12 @@
 title: Drew Hoo
 email: drew.hoo@bc.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Hey I'm Drew, I take a lot of photos (so check out my photo section), oh and I'm a Math and CS double major at Boston College.
+  Hey, I'm Drew.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://drewhoo.com" # the base hostname & protocol for your site
 #twitter_username: 
 github_username:  hoodr
+linkedin: drewhoo
 
 # Build settings
 markdown: kramdown
