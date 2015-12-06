@@ -2,6 +2,7 @@
 layout: post
 title:  "First Post Test"
 date:   2015-11-29 14:40:00 -0500
+description: This is a test, but read it anyways, I guess.
 categories: Posts
 ---
 Ok, so this is a test post, let's see if this works. Oh, and we'll add am image.
