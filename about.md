@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-
+hyperlink: /about
 ---
 
 Hey, I'm Drew!
