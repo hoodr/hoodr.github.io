@@ -3,24 +3,24 @@ layout: default
 ---
 
 <div class="home">
-  <h1 class="page-heading"> The new home to my portfolio </h1>
+    <h1 class="page-heading"> The new home to my portfolio </h1>
+ 
+    <section class="content">
+    <h2>Portfolio</h2>
+ 
+    <p>Check out my images below!</p>
+    </section>
+ 
+    <ul class="post-list">
+        {% for photo_posts in site.categories.photo_posts %}
+ 
+        <li>
+            <a href="{{ photo_posts.url }}">
+                <img src="{{ photo_posts.image }}" />
+                <h3>{{ photo_posts.title }}</h3>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+
 </div>
- 
-<section class="content">
-  <h2>Portfolio</h2>
- 
-  <p>Check out my images below!</p>
-</section>
- 
-<ul class="entries">
-{% for photo_posts in site.categories.photo_posts %}
- 
-  <li>
-    <a href="{{ photo_posts.url }}">
-      <img src="{{ photo_posts.image }}" />
-      <h3>{{ photo_posts.title }}</h3>
-    </a>
-  </li>
- 
-  {% endfor %}
-</ul>
