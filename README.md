@@ -1,3 +1,2 @@
 # hoodr.github.io
-This is my personal website for anything and everything about me. It's also a way to show all the other things I do,
-i.e. a portfolio for the best images I've taken.
+This is my personal website for anything and everything about me. It's also a portfolio for my favorite images I've taken. As a side note, disregard the high number of commits on this site, currently trying to fix local generation of the site, but Jekyll isn't finding the Rouge gem, despite it being in the ruby gems folder.
