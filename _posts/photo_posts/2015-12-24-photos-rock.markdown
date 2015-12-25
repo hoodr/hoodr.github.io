@@ -2,7 +2,7 @@
 layout: portfolio_entry
 title: "Photos Rock"
 image: /assets/test_image_2.jpg
-categories: photo_posts
+category: photo_posts
 ---
 
 Here's a pic from the BC v. Duke game
