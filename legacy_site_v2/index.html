@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<!--
+  Drew Hoo 2019
+-->
+<html>
+  <head>
+    <title>drewhoo.com</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-90239731-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+  </head>
+  <body class="landing">
+    <div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header">
+      <h1 id="logo"><a href="index.html">Drew Hoo</a></h1>
+      <nav id="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="#">About</a>
+          <ul>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="Drew_Hoo_Resume.pdf">Resume</a></li>
+            <li><a href="#">The 90's (coming soon)</a></li>
+          </ul>
+        </li>
+        <li><a href="photo_landing.html">Photography</a></li>
+        <!-- <li><a href="#">Projects</a></li> -->
+        <li><a href="#">Blog  </a></li>
+        <!-- <li><a href="#" class="button special">Sign Up</a></li> -->
+      </ul>
+      </nav>
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+      <div class="content">
+        <header>
+          <h2>Welcome to my Website, I'm Drew</h2>
+          <p>Scroll down for more about me or check out the top bar.</p>
+        </header>
+        <span class="image"><img src="images/Gasson2.png" alt="" /></span>
+      </div>
+      <a href="#one" class="goto-next scrolly">Next</a>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="spotlight style3 right">
+      <span class="image fit main"><img src="images/joyce2.png" alt="" /></span>
+      <div class="content">
+        <header>
+          <h2>JoyceStick</h2>
+          <p>The Gamifiction of James Joyce's seminal work, Ulysses.</p>
+        </header>
+        <p>
+          Over the course of the Fall 2016 semester, we designed and are continuing to build our immersive 3D VR experience of the novel. We explore and evaluate Ulysses in a way that no one has yet done. 21 students from several depts. of Boston College came together for this seminar. Using the literary knowledge of our English students, the creative direction of our Art students, Liam Weir doing his thing, and the technical skill of the CS students, we are building a project that will show Joyce’s world in a way unlike any other.
+          <br>
+          Click the link below for more updates
+        </p>
+        <ul class="actions">
+          <li><a href="http://joycestick.bc.edu/" class="button">Learn More</a></li>
+        </ul>
+      </div>
+      <a href="#three" class="goto-next scrolly">Next</a>
+    </section>
+
+    <!-- Two -->
+    <section id="two" class="spotlight style3 left">
+      <span class="image fit main bottom"><img src="images/mnist4.png" alt="" /></span>
+      <div class="content">
+        <header>
+          <h2>Unsupervised image matching</h2>
+          <p>Final Project for CSCI 3383 Algorithms</p>
+        </header>
+        <p>Project description: You have to develop an algorithm that given a query image finds the “closest” entries to it on a dataset of images.<br>
+        Our program works in two parts. First we extract features from all of the images in the dataset, and then add them to a LSH, which "is an algorithm for solving the approximate or exact Near Neighbor Search in high dimensional spaces." See <a href="http://www.mit.edu/~andoni/LSH/">MIT</a> for more on that. Then, we extract the same feature from an image in the the query set, and then query the LSH to retrieve neighbors. Check out our repo for more info and our final submission and paper.
+        </p>
+        <ul class="actions">
+          <li><a href="https://github.com/hoodr/Algorithms_final_project" class="button">Our GitHub Repo</a></li>
+        </ul>
+      </div>
+      <a href="#four" class="goto-next scrolly">Next</a>
+    </section>
+
+    <!-- Three -->
+    <section id="three" class="spotlight style1 bottom">
+      <span class="image fit main"><img src="images/simpsons.png" alt="" /></span>
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="4u 12u$(medium)">
+              <header>
+                <h2>Simpsons RNN Markov</h2>
+                <p>Final Project for CSCI 3345 Machine Learning</p>
+                <ul class="actions">
+                  <li><a href="https://github.com/reedery/simpsons-rnn-markov" class="button">Our Github Repo</a></li>
+                </ul>
+              </header>
+            </div>
+            <div class="4u 12u$(medium)">
+              <p>In this project our goal was to apply and compare two methods of Procedural Content Generation to the task of generating new and unique natural language samples.  Markov Chains are considered one of the simpler approaches to procedural content generation and can be used as a benchmark for other methods, as they construct a large probability function which characterizes sequences in media in order to recreate samples (Rowe)</p>
+            </div>
+            <div class="4u$ 12u$(medium)">
+              <p> The second method, is using Recurrent Neural Networks. RNN based character level approach was shown to produce realistic results, and similar to the work of Markov Models, RNNs have also been applied to the novel task of producing Additional refinements to the model have also been explored, including an approach we used here, the use of Long Short-term Memory RNN for sequence generation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#two" class="goto-next scrolly">Next</a>
+    </section>
+
+    <!-- Four -->
+    <section id="four" class="wrapper style1 special fade-up">
+      <div class="container">
+      <header class="major">
+        <h2>Other Projects</h2>
+        <p> A repo for my Git Repos </p>
+      </header>
+      <div class="box alt">
+      <div class="row uniform">
+      <section class="4u 6u(medium) 12u$(xsmall)">
+        <!-- <span class="icon alt major fa-area-chart"></span> -->
+        <h3>Vera</h3>
+        <p>My personal assistant. (Major work in progress). Built using Raspberry Pi 3, Jasper, and Facebook Messenger. More to come. (The link should 404 the repo is currently private)</p>
+        <p><br><br><br></p>
+        <ul class="actions">
+          <li><a href="https://github.com/hoodr/VeraPA" class="button">Check out my Repo</a></li>
+        </ul>
+      </section>
+      <section class="4u 6u$(medium) 12u$(xsmall)">
+        <!-- <span class="icon alt major fa-comment"></span> -->
+        <h3>Gutenberg Book Recommender System</h3>
+        <p>The final project for CSCI 3390 Topics in CS (Big Data), This project aims to classify texts based solely on content, and to form book recommendations using punctuation profiles, author name, book metadata, and content clustering using KNN, KMeans, and OLS regression.</p>
+        <ul class="actions">
+          <li><a href="https://github.com/jldbc/gutenberg" class="button">More on our Github</a></li>
+        </ul>
+      </section>
+      <section class="4u$ 6u(medium) 12u$(xsmall)">
+        <!-- <span class="icon alt major fa-flask"></span> -->
+        <h3>Exercism Solutions</h3>
+        <p>Way back when, I did these to prepare for interviews. I'll probably go back and fix these.</p>
+        <p><br><br><br><br><br></p>
+        <ul class="actions">
+          <li><a href="https://github.com/hoodr/exercism" class="button">Github Repo</a></li>
+        </ul>
+      </section>
+      <section class="4u 6u$(medium) 12u$(xsmall)">
+        <!-- <span class="icon alt major fa-paper-plane"></span> -->
+        <h3>Object Oriented Design</h3>
+        <p>These are all the assignments from my object oriented design course. Well, most of them, it needs to be updated.</p>
+        <br><br>
+        <ul class="actions">
+          <li><a href="https://github.com/hoodr/Object_Oriented_Design" class="button">Github Repo</a></li>
+        </ul>
+      </section>
+
+      <!-- FOR LATER -->
+      <!-- <section class="4u 6u(medium) 12u$(xsmall)">
+      <span class="icon alt major fa-file"></span>
+      <h3></h3>
+      <p></p>
+      </section> -->
+      <!-- <section class="4u$ 6u$(medium) 12u$(xsmall)">
+      <span class="icon alt major fa-lock"></span>
+      <h3></h3>
+      <p></p>
+      </section> -->
+      </div>
+      </div>
+      <footer class="major">
+      <ul class="actions">
+      <li><a href="https://github.com/hoodr" class="button">Check out the rest of my Github</a></li>
+      </ul>
+      </footer>
+      </div>
+    </section>
+
+    <!-- Five -->
+    <section id="five" class="wrapper style2 special fade">
+      <div class="container">
+      <header>
+        <h2>Want to get in touch?</h2>
+        <!-- <p></p> -->
+      </header>
+      <ul class="actions">
+        <li><a href="mailto:hoodr@bc.edu" class="button">Email Me</a></li>
+      </ul>
+    <!-- <form method="post" action="#" class="container 50%">
+      <div class="row uniform 50%">
+      <div class="8u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
+      <div class="4u$ 12u$(xsmall)"><input type="submit" value="Get Started" class="fit special" /></div>
+      </div>
+      </form> -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <ul class="icons">
+      <!-- <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+      <li><a href="https://www.facebook.com/zuck" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a href="https://www.linkedin.com/in/drewhoo" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://www.instagram.com/drew_hoo/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+      <li><a href="https://github.com/hoodr" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+      <li><a href="mailto:hoodr@bc.edu" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+      </ul>
+      <ul class="copyright">
+      <li>&copy; Drew Hoo 2017 All rights reserved.</li>
+      </ul>
+    </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
