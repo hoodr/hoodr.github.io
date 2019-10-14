@@ -1,0 +1,47 @@
+.project-detail-container {
+  max-width: 1264px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 5vw;
+  width: 70%;
+  white-space: pre-wrap;
+}
+
+.centerpiece-img {
+  width: 100%
+}
+
+.medium {
+  margin-top: 0;
+}
+
+.links {
+  margin-bottom: 8vh;
+}
+
+.title-yearw {
+  font-weight: lighter;
+}
+
+.full-description {
+  line-height: 2;
+}

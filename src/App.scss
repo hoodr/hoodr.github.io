@@ -1,0 +1,69 @@
+@import "@material/fab/mdc-fab";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.mdc-fab {
+  @include mdc-fab-accessible(white);
+}
+
+.app-fab--absolute {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+
+@media(min-width: 1024px) {
+   .app-fab--absolute {
+    bottom: 2.5rem;
+    right: 2rem;
+  }
+}
+
+.page-leave {
+  transform: translateX(0);
+}
+
+.page-enter-active.page-enter-next, .page-enter-active.page-enter-prev {
+  transform: translateX(0);
+  transition: transform 500ms linear;
+}
+
+.page-enter-next {
+  transform: translateX(100%);
+}
+
+.page-enter-prev {
+  transform: translateX(-100%);
+  transition: transform 500ms linear;
+}
+
+.page-leave-active-next {
+  transform: translateX(-100%);
+  transition: transform 500ms linear;;
+}
+
+.page-leave.page-leave-active-prev {
+  transform: translateX(100%);
+  transition: transform 500ms linear;
+}
