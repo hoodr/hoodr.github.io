@@ -5,12 +5,12 @@
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
-  width: 100%;
   align-items: center;
-  text-align: left;
   justify-content: center;
-  margin-bottom: 10vh;
-  margin-top: 10vh;
+  margin: 10vh auto;
+
+  max-width: 1080px;
+  width: 100%;
 }
 
 .footer-container {
@@ -22,7 +22,7 @@
   flex-direction: row;
   text-align: left;
   flex-flow: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .footer-description, .footer-links {
@@ -32,15 +32,25 @@
   display: -webkit-flex;
   display: flex;
   flex-flow: wrap;
+  width: 45%;
+  text-align: left;
+}
+
+.footer-description {
+  padding-left: 10px;
   flex-direction: column;
-  width: 50%;
+}
+
+.footer-links {
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 /* Breakpoints */
 
 @media all and (max-width: 1690px) {
   .footer-container {
-    width: 85%;
+    /* width: 85%; */
   }
 
   .footer-links {
@@ -49,7 +59,7 @@
 }
 @media all and (max-width: 1280px) {
   .footer-container {
-    width: 90%;
+    /* width: 90%; */
   }
 }
 @media all and (max-width: 980px) {
@@ -66,7 +76,7 @@
 }
 @media all and (max-width: 480px) {
   .footer-container {
-    width: 100%;
+    /* width: 100%; */
   }
 
   .footer-description-container, .links-container {

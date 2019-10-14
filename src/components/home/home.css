@@ -58,6 +58,12 @@ a {
 }
 
 /* breakpoints */
+@media all and (min-width: 1691px) {
+  .content_container {
+    width: 35%;
+    height: 300px;
+  }
+}
 @media all and (max-width: 1690px) {
   .main-arrow {
     margin-top: 15vh;
