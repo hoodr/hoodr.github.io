@@ -1,3 +1,4 @@
+//    min-width:   ~480px | ~640px | ~832px | ~1024px | 1280px
 const breakpoints = ["30em", "40em", "52em", "64em", "80em"];
 
 // aliases - which typescript hates
