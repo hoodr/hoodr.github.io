@@ -7,30 +7,37 @@ Add a drop shadow and a transparent background
 Don’t make the modal with too much contents in it. This is confusing.
 */
 
-import React, { useRef, useEffect } from 'react';
-import CopyButton from './button';
-import './modal.css';
+import React, { useRef, useEffect } from "react";
+import CopyButton from "./button";
+import "./modal.css";
 
-const Modal = (props) => {
-  const { text, show } = props;
-  const textRef = useRef(null);
-  const modalRef = useRef(null);
+const Modal = ({
+  text,
+  show,
+}: {
+  text: string;
+  show: () => void;
+}): JSX.Element => {
+  const textRef = useRef<HTMLInputElement>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
 
-  const CopyText = e => {
-    textRef.current.select();
-    document.execCommand('copy');
+  const CopyText = () => {
+    if (textRef.current) {
+      textRef.current.select();
+      document.execCommand("copy");
+    }
     // e.target.focus();
   };
 
-  const handleClickOutside = (event) => {
+  const handleClickOutside = (event: { target: any }) => {
     if (modalRef.current && !modalRef.current.contains(event.target)) {
       show();
     }
-  }
+  };
 
-  const handleEsc = (event) => {
-    if(event.keyCode === 27) {
-      show()
+  const handleEsc = (event: { keyCode: number }) => {
+    if (event.keyCode === 27) {
+      show();
     }
   };
 
@@ -44,38 +51,38 @@ const Modal = (props) => {
     };
   });
 
-  let ButtonProps = {
-    customClass: "modal-button",
-    cta: "COPY",
-    click:e => CopyText(e)
-  };
-
   return (
     <div className="modal">
       <div className="modal-container" ref={modalRef}>
         <div className="close-icon-container">
           <button
+            type="button"
             className="mdc-fab mdc-fab--mini close-icon"
-            onClick={() => show()}>
-            <i className="mdc-fab__icon material-icons">
-            close
-            </i>
+            onClick={() => show()}
+          >
+            <i className="mdc-fab__icon material-icons">close</i>
           </button>
         </div>
-        <h2 className="modal-heading">Here's my email!</h2>
+        <h2 className="modal-heading">Here&apos;s my email!</h2>
         <div className="text-bar-container">
           <input
             ref={textRef}
             className="text-bar-input"
             value={text}
-            readOnly={true}/>
-          { document.queryCommandSupported('copy') &&
-            <CopyButton {...ButtonProps} /> }
+            readOnly
+          />
+          {document.queryCommandSupported("copy") && (
+            <CopyButton
+              customClass="modal-button"
+              cta="COPY"
+              click={() => CopyText()}
+              linkTo="#"
+            />
+          )}
         </div>
-
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Modal;
