@@ -6,6 +6,7 @@ import { Work } from "../types/Work";
 import ArrowMain from "../assets/arrow_main.svg";
 import { Box, FlexColumn } from "../components/common/Layout";
 import WorkComponent from "../components/work";
+import { pageview } from "../utils/gtag";
 
 const LandingScreen = styled(FlexColumn)({
   position: "relative",
@@ -20,9 +21,9 @@ const LandingScreen = styled(FlexColumn)({
 const Home = ({ work }: { work: Work }): JSX.Element => {
   return (
     <Box>
+      {pageview("/")}
       <LandingScreen>
         <Box marginTop="20vh" color="white">
-          {/* formerly content_container */}
           <Box fontWeight="bold" textAlign="left">
             <h1>I’m Drew Hoo.</h1>
             <h1>I‘m a Software Engineer.</h1>
