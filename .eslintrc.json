@@ -3,7 +3,7 @@
     "browser": true,
     "es2021": true
   },
-  "extends": ["airbnb-typescript-prettier", "plugin:react/recommended"],
+  "extends": ["airbnb", "plugin:react/recommended"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -11,11 +11,40 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["react"],
   "rules": {
     "react/require-default-props": "off",
     "react/jsx-props-no-spreading": "off",
     "quotes": ["error", "double"],
-    "jsx-quotes": ["error", "prefer-double"]
-  }
+    "jsx-quotes": ["error", "prefer-double"],
+    "semi": ["error", "always"],
+    "object-curly-newline": "off"
+  },
+  // see: https://github.com/typescript-eslint/typescript-eslint/issues/109
+  "overrides": [
+    {
+      "files": ["**/*.ts", "**/*.tsx"],
+      "env": { "browser": true, "es2021": true },
+      "extends": [
+        "airbnb-typescript-prettier",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaFeatures": { "jsx": true },
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+      },
+      "plugins": ["react", "@typescript-eslint"],
+      "rules": {
+        "quotes": ["error", "double"],
+        "@typescript-eslint/no-explicit-any": 0
+      },
+      "settings": { "react": { "version": "detect" } }
+    }
+  ]
 }
