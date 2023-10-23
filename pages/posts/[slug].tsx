@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Container from "../../components/container";
 import PostBody from "../../components/post-body";
-import { HeaderAlt } from "../../components/header";
+import { HeaderAlt } from "../../components/Header";
 import PostHeader from "../../components/post-header";
 import Layout from "../../components/post-layout";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
@@ -25,7 +25,7 @@ export default function Post({ post, morePosts, preview }: Props) {
   }
   return (
     <Box>
-      <Layout preview={preview}>
+      <Layout>
         <Container>
           <HeaderAlt />
           {router.isFallback ? (
@@ -78,10 +78,11 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
+  // TODO: type this properly. Needs to return full post
   const posts = getAllPosts(["slug"]);
 
   return {
-    paths: posts.map((post: Post) => {
+    paths: posts.map((post: any) => {
       return {
         params: {
           slug: post.slug,
