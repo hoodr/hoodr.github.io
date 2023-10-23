@@ -44,6 +44,6 @@ export function getAllPosts(fields: string[] = []) {
     .filter((slug: string) => !slug.includes("wip"))
     .map((slug: string) => getPostBySlug(slug, fields))
     // sort posts by date in descending order
-    .sort((post1: Post, post2: Post) => (post1.date > post2.date ? -1 : 1));
+    .sort((post1: any, post2: any) => (post1.date > post2.date ? -1 : 1));
   return posts;
 }
