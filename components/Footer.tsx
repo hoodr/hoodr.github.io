@@ -3,24 +3,26 @@ import { PiedPiper as GrommetIcon } from "grommet-icons";
 import { Anchor, Box, Footer, ResponsiveContext, Text } from "grommet";
 
 const data = [
-  ["App", "home", "beta", "sponsors"],
-  ["Legal", "terms", "privacy", "security"],
-  ["Company", "about", "press", "jobs"],
+  ["App", "beta", "sponsors", "press"],
+  ["Me", "resume.pdf", "about" ],
 ];
-
-const FooterAnchor = ({ ...rest }) => (
-  <Anchor href="/" size="small" color="brand" {...rest} />
-);
 
 const FooterContent = () =>
   data.map((item) => (
-    <Box gap="medium" key={item[0]}>
-      <Text color="dark-2" weight="bold" size="small">
+    <Box gap="small" key={item[0]}>
+      <Text color="dark-2" weight="bold" size="medium">
         {item[0]}
       </Text>
       <Box>
         {[1, 2, 3].map((i) => (
-          <FooterAnchor key={item[i]}>{item[i]}</FooterAnchor>
+          <Anchor
+            key={i}
+            href={`/${item[i]}`}
+            size="small"
+            color="brand"
+            margin={{top: "small"}}
+            label={item[i]}
+          />
         ))}
       </Box>
     </Box>
@@ -52,15 +54,22 @@ export const SitemapFooter = () => {
             top: "large",
             bottom: "medium"
           }}
+          justify="around"
         >
-          <Box direction="row-responsive" gap="xsmall">
+          <Box direction="row-responsive" gap="xsmall" margin={{left: "medium", right: "medium"}}>
             <Box align="center" gap="small">
               <Text alignSelf="center" color="brand" weight="bold">
                 drewhoo
               </Text>
             </Box>
           </Box>
-          {FooterContent()}
+          <Box
+            direction="row-responsive"
+            gap="medium"
+            margin={{left: "medium", right: "medium"}}
+          >
+            {FooterContent()}
+          </Box>
         </Footer>
       )
       }

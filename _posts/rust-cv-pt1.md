@@ -1,10 +1,10 @@
 ---
 title: 'Getting into Computer Vision with Rust'
-excerpt: ''
-coverImage: '/assets/blog/dynamic-routing/cover.jpg'
-date: '2023-09-10T00:00:00Z'
+excerpt: "Computer vision is something I've had an interest in for ages. It combined my love for photo/video with math and computer science. However, I never really had a chance to explore this avenue at university."
+coverImage: '/assets/blog/rust-cv-pt1/cover.jpg'
+date: '2023-10-25T00:00:00Z'
 ogImage:
-  url: '/assets/blog/dynamic-routing/cover.jpg'
+  url: '/assets/blog/rust-cv-pt1/cover.jpg'
 ---
 
 # Getting into Computer Vision with Rust

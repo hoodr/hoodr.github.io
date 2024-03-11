@@ -6,7 +6,7 @@ type Props = {
 const Container = ({ children }: Props) => {
   return (
     <Box
-      pad="large"
+      pad={{top: "small", left: "large", right: "large"}}
       width={{ min: "small", max: "xxlarge" }}
       responsive>
       {children}

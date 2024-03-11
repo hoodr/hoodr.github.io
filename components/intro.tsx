@@ -3,7 +3,7 @@ import { Box, Heading } from "grommet";
 const Intro = () => {
   return (
     <Box flex direction="row" align="center" justify="between" margin={{ top: "medium", bottom: "medium" }} >
-      <Heading level={1} size="large" weight="bold">
+      <Heading level={1} size="large" weight="bold" margin="small">
         Drew Hoo
       </Heading>
       <Heading level={4} size="medium">
