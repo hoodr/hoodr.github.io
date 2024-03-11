@@ -45,7 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["remark", "npm:14.0.3"],\
             ["styled-components", "virtual:d4d6498e82181421b3760e8c5b895cbc1387799e9f26c02529b9349081cc3c1597cc6648e466d9bf0e42073bc22b4564d7deaa71c563f2dfcc5a7505302e7562#npm:5.3.11"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"],\
-            ["typescript-language-server", "npm:3.3.2"]\
+            ["typescript-language-server", "npm:4.3.3"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -1265,7 +1265,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["remark", "npm:14.0.3"],\
             ["styled-components", "virtual:d4d6498e82181421b3760e8c5b895cbc1387799e9f26c02529b9349081cc3c1597cc6648e466d9bf0e42073bc22b4564d7deaa71c563f2dfcc5a7505302e7562#npm:5.3.11"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=289587"],\
-            ["typescript-language-server", "npm:3.3.2"]\
+            ["typescript-language-server", "npm:4.3.3"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -3266,10 +3266,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["typescript-language-server", [\
-        ["npm:3.3.2", {\
-          "packageLocation": "./.yarn/cache/typescript-language-server-npm-3.3.2-c139e35efe-0708c020cf.zip/node_modules/typescript-language-server/",\
+        ["npm:4.3.3", {\
+          "packageLocation": "./.yarn/cache/typescript-language-server-npm-4.3.3-fbfa4a8ecc-d55e1ec64a.zip/node_modules/typescript-language-server/",\
           "packageDependencies": [\
-            ["typescript-language-server", "npm:3.3.2"],\
+            ["typescript-language-server", "npm:4.3.3"],\
             ["vscode-jsonrpc", "npm:5.0.1"],\
             ["vscode-languageserver-protocol", "npm:3.17.5"]\
           ],\
